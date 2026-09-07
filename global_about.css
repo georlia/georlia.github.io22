@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* Figma Variables */
+
+  /* Color */
+  --Hero-Devider: rgba(255, 255, 255, 0.25);
+
+  /* Common Style Variables */
+
+  /* Color */
+  --color-black: #000;
+  --color-darkgray: #ada2a2;
+  --color-darkslategray: #473d3d;
+  --color-dimgray-100: #706464;
+  --color-dimgray-200: #5c5050;
+  --color-gainsboro: #ebe7e7;
+  --color-gray-100: #998d8d;
+  --color-gray-200: #857878;
+  --color-lightgray: #d6cfcf;
+  --color-silver: #c2b9b9;
+  --color-white: #fff;
+  --color-yellow: #ecf700;
+
+  /* Gap */
+  --gap-10: 10px;
+
+  /* Padding */
+  --padding-48: 48px;
+
+  /* Font */
+  --font-alatsi: Alatsi, Arial, sans-serif;
+  --font-orbitron: Orbitron, Arial, sans-serif;
+  --font-oxanium: Oxanium, Arial, sans-serif;
+  --font-prompt: Prompt, Arial, sans-serif;
+
+  /* FontSize */
+  --fs-18: 18px;
+  --fs-22: 22px;
+  --fs-24: 24px;
+  --fs-32: 32px;
+
+  /* WidthHeights */
+  --height-50: 50px;
+  --max-w-50: 50px;
+}

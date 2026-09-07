@@ -1,0 +1,256 @@
+.contact {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 30px 496px;
+  box-sizing: border-box;
+  isolation: isolate;
+  line-height: normal;
+  letter-spacing: normal;
+  z-index: 0;
+  text-align: left;
+  font-size: var(--fs-22);
+  color: var(--color-white);
+  font-family: var(--font-prompt);
+}
+.text-on-path {
+  width: 667px;
+  height: 667px;
+  position: absolute;
+  margin: 0 !important;
+  top: -270px;
+  right: -281px;
+  z-index: 3;
+  flex-shrink: 0;
+}
+.navbar,
+.navbar2 {
+  display: flex;
+  align-items: flex-start;
+}
+.navbar {
+  width: 100%;
+  max-width: 1296.2px;
+  z-index: 4;
+  flex-shrink: 0;
+  font-size: 32px;
+  font-family: var(--font-oxanium);
+}
+.navbar2 {
+  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--gap-10) 0;
+  max-width: 997px;
+}
+.portfolio {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.nav-links {
+  height: 34px;
+  display: flex;
+  align-items: flex-start;
+  gap: 49px;
+  font-size: var(--fs-22);
+  font-family: var(--font-prompt);
+}
+.contact2,
+.home,
+.projects {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.contact2,
+.projects {
+  margin: 0 !important;
+  position: absolute;
+  top: 52px;
+  right: 63px;
+  display: inline-block;
+  min-width: 103px;
+  z-index: 5;
+  flex-shrink: 0;
+}
+.projects {
+  right: 217px;
+  min-width: 105px;
+  z-index: 6;
+}
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 74px 0;
+  box-sizing: border-box;
+  gap: 32px;
+  max-width: 1296.2px;
+  z-index: 7;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 56px;
+  color: var(--color-yellow);
+  font-family: var(--font-orbitron);
+}
+.contact3 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.16em;
+  font-weight: 800;
+  font-family: inherit;
+}
+.linkedin-github {
+  position: relative;
+  font-size: 24px;
+  font-family: var(--font-alatsi);
+  color: var(--color-white);
+  text-shadow: var(--text-shadow-1);
+}
+.divider-icon,
+.neurus-color-scale {
+  margin: 0 !important;
+  position: absolute;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.divider-icon {
+  width: calc(100% + 1px);
+  height: 1px;
+  top: 121.5px;
+  right: -0.5px;
+  left: -0.5px;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: 2;
+}
+.neurus-color-scale {
+  width: 590px;
+  top: calc(50% - 72px);
+  left: -1640px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: var(--gap-10);
+  z-index: 1;
+}
+.neurus100,
+.neurus90 {
+  height: var(--height-50);
+  flex: 1;
+  position: relative;
+  background-color: var(--color-darkslategray);
+  max-width: var(--max-w-50);
+}
+.neurus90 {
+  background-color: var(--color-dimgray-200);
+}
+.neurus10,
+.neurus20,
+.neurus30,
+.neurus40,
+.neurus50,
+.neurus60,
+.neurus70,
+.neurus80 {
+  height: var(--height-50);
+  flex: 1;
+  position: relative;
+  background-color: var(--color-dimgray-100);
+  max-width: var(--max-w-50);
+}
+.neurus10,
+.neurus20,
+.neurus30,
+.neurus40,
+.neurus50,
+.neurus60,
+.neurus70 {
+  background-color: var(--color-gray-200);
+}
+.neurus10,
+.neurus20,
+.neurus30,
+.neurus40,
+.neurus50,
+.neurus60 {
+  background-color: var(--color-gray-100);
+}
+.neurus10,
+.neurus20,
+.neurus30,
+.neurus40,
+.neurus50 {
+  background-color: var(--color-darkgray);
+}
+.neurus10,
+.neurus20,
+.neurus30,
+.neurus40 {
+  background-color: var(--color-silver);
+}
+.neurus10,
+.neurus20,
+.neurus30 {
+  background-color: var(--color-lightgray);
+}
+.neurus10,
+.neurus20 {
+  background-color: var(--color-gainsboro);
+}
+.neurus10 {
+  background-color: var(--color-white);
+}
+@media screen and (max-width: 1300px) {
+  .navbar2 {
+    gap: 0;
+  }
+  .contact-section,
+  .navbar,
+  .navbar2 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .navbar2 {
+    gap: 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-section {
+    gap: 16px;
+  }
+  .contact3 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact2,
+  .projects {
+    font-size: var(--fs-18);
+  }
+  .linkedin-github {
+    font-size: 19px;
+  }
+  .contact-section {
+    gap: 16px;
+  }
+  .contact3 {
+    font-size: 45px;
+  }
+}
