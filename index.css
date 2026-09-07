@@ -10,18 +10,18 @@
   background-color: var(--color-black);
   overflow-y: auto;
   flex-direction: column;
-  padding: 52px var(--padding-0) var(--padding-0);
-  gap: 28.5px;
-  max-height: 1000px;
+  padding: 30px var(--padding-0) var(--padding-0);
+  gap: 20px;
   line-height: normal;
   letter-spacing: normal;
+  min-height: 100vh;
 }
 .navbar {
   align-self: stretch;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding: var(--padding-0) 30px var(--padding-0) 38px;
+  padding: 0 40px;
   gap: 8px;
   max-width: 100%;
   flex-shrink: 0;
@@ -59,6 +59,7 @@
   font-size: inherit;
   font-weight: 400;
   font-family: inherit;
+  cursor: pointer;
 }
 .projects {
   height: 34px;
@@ -87,14 +88,16 @@
 }
 .hero-section {
   width: 100%;
-  height: 500px;
+  flex-grow: 1;
   position: relative;
   flex-shrink: 0;
   max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
   padding: 0 40px;
+  margin: 0 auto;
 }
 .data-scientist,
 .hero-left-content {
@@ -104,10 +107,9 @@
 }
 .hero-left-content {
   position: relative;
-  width: 50%;
+  width: 45%;
   flex-direction: column;
-  gap: 32px;
-  max-width: 100%;
+  gap: 24px;
   text-align: left;
   font-size: var(--fs-32);
   color: var(--color-white);
@@ -115,7 +117,7 @@
 }
 .data-scientist {
   width: 100%;
-  padding: var(--padding-0) var(--padding-0) 26px;
+  padding: var(--padding-0) var(--padding-0) 16px;
   box-sizing: border-box;
   max-width: 298px;
 }
@@ -133,15 +135,15 @@
 .hello-my-name-container {
   margin: 0;
   width: 100%;
-  height: 95px;
   position: relative;
   font-size: 48px;
   letter-spacing: 0.16em;
   font-weight: 800;
   font-family: var(--font-orbitron);
-  display: inline-block;
+  display: block;
   max-width: 596px;
   flex-shrink: 0;
+  line-height: 1.2;
 }
 .georlia-sgouraki {
   color: var(--color-yellow-100);
@@ -149,26 +151,26 @@
 .a-final-year-informatics {
   align-self: stretch;
   position: relative;
-  line-height: 30px;
+  line-height: 24px;
+  font-size: 15px;
   font-family: var(--font-alatsi);
   flex-shrink: 0;
 }
 .hero-cta-group {
-  align-self: stretch;
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 55px 0 var(--padding-0) 3px;
+  padding: 20px 0 0 0;
   gap: 15px;
   flex-shrink: 0;
 }
 .primary-button {
   cursor: pointer;
   border: 0;
-  padding: 19px 23px 9px;
+  padding: 14px 28px;
   background-color: transparent;
-  align-self: stretch;
-  height: 64px;
+  height: 50px;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -176,6 +178,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  white-space: nowrap;
 }
 .primary-button:hover {
   background-color: var(--color-yellow-200);
@@ -248,10 +251,10 @@
 }
 .merged-asset-3-icon {
   position: relative;
-  width: 40%;
-  max-width: 380px;
-  height: 450px;
-  object-fit: cover;
+  width: 45%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
   flex-shrink: 0;
 }
 .image-placeholder-icon {
@@ -271,20 +274,17 @@
   height: 556px;
   object-fit: cover;
 }
-@media screen and (max-width: 1125px) {
-  .nav-links {
-    max-width: 100%;
-  }
+@media screen and (max-width: 1200px) {
   .hero-section {
-    flex-direction: column;
-    height: auto;
+    gap: 20px;
+    padding: 0 30px;
   }
   .hero-left-content {
-    width: 100%;
+    width: 50%;
   }
   .merged-asset-3-icon {
-    width: 100%;
-    max-width: 400px;
+    width: 45%;
+    max-width: 350px;
   }
 }
 @media screen and (max-width: 1025px) {
@@ -296,7 +296,25 @@
   }
   .a-final-year-informatics {
     font-size: var(--fs-26);
-    line-height: 24px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .hero-section {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 30px;
+  }
+  .hero-left-content {
+    width: 100%;
+  }
+  .merged-asset-3-icon {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
   }
 }
 @media screen and (max-width: 750px) {
@@ -309,12 +327,8 @@
   .nav-arrow-buttons {
     flex-wrap: wrap;
   }
-  .hero-section {
-    padding: 0 20px;
-  }
   .merged-asset-3-icon {
     max-width: 300px;
-    height: 350px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -330,6 +344,8 @@
   }
   .merged-asset-3-icon {
     max-width: 250px;
-    height: 300px;
+  }
+  .navbar {
+    padding: 0 15px;
   }
 }
